@@ -211,6 +211,7 @@ html, body {
 .sectionContainLeft {
     width: 100px;
     display: table-cell;
+    vertical-align: top;
 }
 
 .sectionContainRight {
@@ -766,7 +767,7 @@ h4.section-5-slideName {
   background: transparent;
   color: #fff;
 }
-.UpdatesSubmit {
+.btn_trans {
   background: rgba(255,255,255,0.5);
   border: 1px solid #fff;
   padding: 13px 30px;
@@ -782,6 +783,97 @@ h4.section-5-slideName {
 }
 
 /* Section 8 */
+
+/*Team banner */
+
+
+.heroSection.teamHero {
+  background-image: url('../images/teambanner.png');
+}
+.teamHero .navbar-expand-md .navbar-nav .nav-link{
+  color: #47164f
+}
+.teamHero .heroSectionContent h1 {
+    color: #47164f;
+    font-weight: 300;
+    font-family: 'gilroy-light', Montserrat, sans-serif;
+}
+.teamHero .heroSectionContent {
+    max-width: 550px;
+    padding: 100px 0 400px;
+}
+.teamChatWrap {
+    position: relative;
+    background: url(../images/telegram.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+    background-position: bottom center;
+}
+.teamChatWrapRight .sectionSubHead {
+    float: left;
+    padding: 10px 50px 10px 0;
+}
+.sectioncarouselContent {
+    display: table;
+    margin: 0 -15px;
+}
+.sectioncarouselRight, .sectioncarouselLeft {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 15px;
+}
+.sectioncarouselLeft {
+    width: 40%;
+}
+.sectioncarouselRight p {
+    padding-bottom: 15px;
+}
+.sectioncarousel {
+    padding: 100px 0 30px;
+}
+.sectioncarousel .carousel-indicators {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    padding-top: 80px;
+}
+.sectioncarousel  .carousel-indicators li {
+    width: 11px;
+    float: none;
+    height: 11px;
+    border-radius: 50%;
+    display: block;
+    background: #D4D4D4;
+    margin-bottom: 7px;
+}
+.sectioncarousel .carousel-indicators li.active {
+    background: #555;
+    height:  12px;
+    width: 12px;
+}
+
+
+/*Team banner */
+
+
+/*road Map*/
+
+.heroSection.roadmapHero {
+  background-image: url('../images/roadmapbanner.png');
+}
+.roadmapHero .heroSectionContent{
+  padding: 180px 0 360px;
+}
+.keepUpdated_dark .UpdatesSubmit{
+  background: #F36C26;
+}
+.keepUpdated_dark .UpdatesEmail{
+  border-color: #47164F;
+  color: #47164F;
+}
+
+/*road Map*/
 
 
 /*Footer*/
@@ -859,7 +951,7 @@ footer{
 }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .navbar-expand-md .navbar-nav .nav-link {
     text-align: left;
     padding: 10px 0;
@@ -1017,6 +1109,24 @@ footer{
 .keepUpdated input {
     margin-bottom: 20px;
 }
+.sectioncarousel .carousel-indicators li {
+    display: inline-block;
+}
+
+.sectioncarousel .carousel-indicators {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+.sectioncarousel {
+    padding: 70px 0 30px;
+}
+.sectioncarouselRight, .sectioncarouselLeft {
+    width: 100%;
+    display: block;
+}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1030,3 +1140,31 @@ footer{
 
 
 /*Responsive*/
+
+
+
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .6s;
+ transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
