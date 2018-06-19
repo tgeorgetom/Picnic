@@ -68,12 +68,14 @@ a:hover,
 a:visited, 
 a:active{
   text-decoration: none;
-  outline:none 
+  outline:none;
+  outline: 0; 
 }
 a,
 a:active, 
 a:focus{
   outline: none;
+  outline: 0;
 }
 html, body {
     height: 100%;
@@ -508,10 +510,10 @@ h4.section-5-slideName {
     font-size: 35px;
     color: #d0cfcb;
 }
-.slick-list {
+/*.slick-list {
     z-index: -1;
-}
-.section-5-slides .slick-arrow {
+}*/
+.section-5-slides .slick-arrow, .roadmapTimeline  .slick-arrow{
     background: #fff;
     border: none;
     font-size: 0;
@@ -524,28 +526,32 @@ h4.section-5-slideName {
     transform: translateY(-50%);
     box-shadow: 20px 20px 50px rgba(0,0,0,0.1);
     cursor: pointer;
+    z-index: 200px;
 }
 
 .section-5-slides {
     position: relative;
 }
 
-.section-5-slides .slick-prev.slick-arrow {
+.section-5-slides .slick-prev.slick-arrow, .roadmapTimeline .slick-prev.slick-arrow {
+
+    z-index: 2222222;
     left: 50px;
 }
 
-.section-5-slides button.slick-next.slick-arrow {
+.section-5-slides .slick-next.slick-arrow, .roadmapTimeline .slick-next.slick-arrow {
     right: 50px;
     left: auto;
     z-index: 2222222;
+
 }
 
-.section-5-slides button.slick-next.slick-arrow:after {
+.section-5-slides .slick-next.slick-arrow:after, .roadmapTimeline .slick-next.slick-arrow:after{
     font-size: 26px;
     content: '\f061';
     font-family: fontawesome;
 }
-.section-5-slides button.slick-prev.slick-arrow:after {
+.section-5-slides .slick-prev.slick-arrow:after, .roadmapTimeline .slick-prev.slick-arrow:after{
     font-size: 26px;
     content: '\f060';
     font-family: fontawesome;
@@ -882,6 +888,88 @@ h4.section-5-slideName {
   border-color: #47164F;
   color: #47164F;
 }
+.section.keepUpdated_dark.roadMapUpdates {
+    background: url('../images/roadmapupdatebg.jpg');
+    background-position: bottom center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.roadMapUpdates:before {
+    background-image: url(../images/roadmapupdatebg1.jpg);
+    content: "";
+    height: 120px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    z-index: 12;
+    left: 0;
+    display: block;
+    right: 0;
+}
+.roadmapTimeline {
+    background: #f06b38;
+    overflow: hidden;
+    position: relative;
+}
+.roadmapTimelineHead {
+    font-size: 60px;
+    font-family: 'gilroy-light', Montserrat, sans-serif;
+    padding: 40px 0;
+}
+
+.roadmapTimelineDate p {
+    font-size: 33px;
+    font-family: 'gilroy-light', Montserrat, sans-serif;
+}
+
+.roadmapTimelineDate span {
+    font-size: 20px;
+    font-family: 'gilroy-light', Montserrat, sans-serif;
+    height: 5px;
+    line-height: 5px;
+    overflow:  hidden;
+}
+.roadmapTimelineSlide .sectionSubDesc {
+    max-width: none;
+    font-family: 'gilroy-light', Montserrat, sans-serif;
+}
+
+.roadmapTimelineSlide {
+    /*max-width: 760px;*/
+    /*padding: 0 70px;*/
+}
+.roadmapTimeline-contents {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.roadmapTimelineSlide {
+    padding-right: 200px;
+}
+.roadmapTimelineSlide:nth-of-type(odd):after {
+    content: "";
+    background: #e77f4f;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -120px;
+    top: 0;
+    z-index: -1;
+    transform: scaleY(5);
+}
+.roadmapTimeline .slick-list{
+  overflow: visible;
+}
+.roadmapTimelineSlide {
+    position: relative;
+}
+.roadmapTimeline  .sectionContainer {
+    position: relative;
+    z-index: 1;
+}
 
 /*road Map*/
 
@@ -934,7 +1022,6 @@ footer{
   color: #fff;
   text-decoration: underline;
 }
-
 
 /*Footer*/
 
@@ -1136,6 +1223,27 @@ footer{
 .sectioncarouselRight, .sectioncarouselLeft {
     width: 100%;
     display: block;
+}
+.roadmapTimelineSlide{
+  padding-right: 0;
+  padding-right: 20px;
+}
+.roadmapTimelineHead {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.roadmapTimelineDate span {
+    font-size: 14px;
+}
+
+.roadmapTimelineDate p {
+    font-size: 20px;
+}
+.roadmapTimelineSlide:nth-of-type(odd):after{
+  left: -10px
+}
+.roadmapTimelineSlide {
 }
 }
 
