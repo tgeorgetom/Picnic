@@ -138,10 +138,14 @@ html, body {
     font-weight: 700;
 }
 
+.teamHead {
+  font-size: 90px;
+  font-weight: 700;
+}
+
 .heroSectionContent h2 {
     font-size: 48px;
     font-weight: 300;
-    text-transform: uppercase;
     padding: 20px 0 60px;
 }
 .heroSectionContent {
@@ -549,7 +553,7 @@ h4.section-5-slideName {
 
 
 .team-photo {
-  width: 440px;
+  width: 440px !important;
 }
 
 
@@ -802,8 +806,7 @@ h4.section-5-slideName {
 }
 .teamHero .heroSectionContent h1 {
     color: #47164f;
-    font-weight: 300;
-    font-family: 'gilroy-light', Montserrat, sans-serif;
+    font-family: 'gilroy-bold', Montserrat, sans-serif;
 }
 .teamHero .heroSectionContent {
     max-width: 550px;
