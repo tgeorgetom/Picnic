@@ -11,11 +11,22 @@
 }
 @font-face {
     font-family: 'gilroy-bold';
-    src: url('gilroy-bold-webfont.eot');
-    src: url('gilroy-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('gilroy-bold-webfont.woff2') format('woff2'),
-         url('gilroy-bold-webfont.woff') format('woff'),
-         url('gilroy-bold-webfont.svg#gilroy-bolduploaded_file') format('svg');
+    src: url('../fonts/gilroy-bold-webfont.eot');
+    src: url('../fonts/gilroy-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gilroy-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-bold-webfont.woff') format('woff'),
+         url('../fonts/gilroy-bold-webfont.svg#gilroy-bolduploaded_file') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gilroy-light';
+    src: url('../fonts/gilroy-light-webfont.eot');
+    src: url('../fonts/gilroy-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-light-webfont.woff') format('woff'),
+         url('../fonts/gilroy-light-webfont.svg#gilroy-lightuploaded_file') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -49,6 +60,9 @@ h4,
 h5,
 h6{
   font-family: 'gilroy-bold', Montserrat, sans-serif;
+}
+.light{
+  font-family: 'gilroy-light', Montserrat, sans-serif !important;
 }
 a:hover, 
 a:visited, 
@@ -123,11 +137,11 @@ html, body {
 .heroSectionContent h2 {
     font-size: 48px;
     font-weight: 300;
+    text-transform: uppercase;
     padding: 20px 0 60px;
 }
-
 .heroSectionContent {
-    max-width: 500px;
+    max-width: 550px;
     padding: 70px 0 240px;
 }
 
@@ -202,6 +216,13 @@ html, body {
 .sectionContainRight {
     display: table-cell;
 }
+.keepUpdated input {
+    margin-bottom: 20px;
+}
+
+button.navbar-toggler {
+    border: 1px solid #fff;
+}
 /* Header */
 
 
@@ -232,6 +253,7 @@ html, body {
   font-weight: 300;
   text-transform: uppercase;
   padding-bottom: 25px;
+  font-family: 'gilroy-light', Montserrat, sans-serif;
 }
 .sectionSubDesc {
   font-size: 16px;
@@ -251,6 +273,7 @@ html, body {
   color: #555;
   letter-spacing: 6px;
   display: block;
+  font-family: 'gilroy-bold', Montserrat, sans-serif;
 }
 .sectionSub {
   max-width: 300px;
@@ -300,6 +323,11 @@ html, body {
 }
 .section-2-After {
     height: 420px;
+}
+
+
+.section-2-After img {
+    width: 100%;
 }
 /* Section 2 */
 
@@ -411,9 +439,8 @@ html, body {
 .section-4 {
   background: url('../images/910218206.png');
   background-position: right center;
-  background-size: a;
   background-repeat: no-repeat;
-  padding: 140px;
+  padding: 140px 0;
 }
 
 /* Section 4 */
@@ -457,6 +484,10 @@ h4.section-5-slideName {
 }*/
 .section-5-slideImg {
     background: #fafafa;
+}
+.section-5-slideImg img {
+    width: 100%;
+    padding-right: 100px;
 }
 
 .section-5-slideSocial li {
@@ -728,22 +759,6 @@ h4.section-5-slideName {
     padding: 200px 0;
     background-position: bottom center;
 }
-.section.section-8::after {
-  content: "";
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6384d+0,f06b38+50 */
-  background: #e6384d; /* Old browsers */
-  background: -moz-linear-gradient(left, #f36c26 0%,  #ec4c3e 50%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #f36c26 0%,  #ec4c3e 50%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #f36c26 0%,  #ec4c3e 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6384d', endColorstr='#f06b38',GradientType=1 ); /* IE6-9 */
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  bottom: 0;
-  display: block;
-  z-index: -1;
-
-}
 .UpdatesEmail {
   padding: 10px 30px;
   border: 1px solid #fff;
@@ -825,21 +840,193 @@ footer{
 
 /*Responsive*/
 
-
-@media (max-width: 575px) {
-
-}
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1200px) {
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+.sectionBlogDetails {
+    padding: 20px;
+}
+.sectionBlog.sectionBlogScale {
+    transform: scale(1.1);
+}
+}
+
+@media (max-width: 768px) {
+.navbar-expand-md .navbar-nav .nav-link {
+    text-align: left;
+    padding: 10px 0;
+}
+.heroSectionContent h1 {
+    font-size: 60px;
+}
+.heroSectionContent h2 {
+    font-size: 32px;
+}
+.heroSectionBtns button {
+    font-size: 14px;
+}
+.heroSectionContent {
+    padding: 20px 0 160px;
+}
+.section {
+    padding: 70px 0;
+}
+.sectionContainLeft, .sectionContainRight {
+    display: block;
+}
+.sectionContainLeft, .sectionContainRight {
+    display: block;
+}
+.sectionHead {
+    font-size: 35px;
+}
+.sectionSub {
+    margin: 0 auto 80px;
+    text-align: center;
+    max-width: none;
+}
+.sectionSubImg {
+    height: 100px;
+    width: 100px;
+    line-height: 96px;
+    margin: 0 auto 30px;
+}
+.sectionSubImg img {
+    width: 55%;
+}
+.sectionSubDesc {
+    margin: 0 auto;
+}
+.sectionSubHead {
+    padding-bottom: 15px;
+}
+.section.section-2 {
+    padding: 290px 0 190px;
+    background-position: top left;
+    background-size: auto 100%;
+}
+
+.section-2-After img {
+    width: 100%;
+}
+
+.section-2-After {
+    height: auto;
+}
+.sectionNum {
+    font-size: 120px;
+}
+.section.section-3 {
+    position: relative;
+    padding-bottom: 180px;
+    background: url(../images/sec3bg.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-top: 70px;
+}
+.section-3-content-left, .section-3-content-right {
+    width: 100%;
+    display: block;
+    padding: 0 15px;
+}
+
+.section-3-content {
+    margin: 0;
+}
+
+.section-3 .sectionSub {
+    padding: 0;
+}
+.section.section-4 {
+    background: none;
+}
+
+.section-4-content p {
+  max-width: 100%;
+}
+.section-5-slideImg img {
+    padding-right: 40px;
+}
+.section-5-slides {
+    position: relative;
+    padding: 0 15px;
+}
+.section-5-slides .slick-arrow {
+    height: 60px;
+    width: 60px;
+}
+.section-5-slideDesc {
+    max-width: none;
+}
+.section-6Left, .section-6Right {
+    width: 100%;
+    display: block;
+}
+.section-6Right {
+    padding-top: 70px;
+}
+.slideMeetDate h2 {
+    font-size: 50px;
+}
+.slideMeetDate b {
+    font-size: 30px;
+    top: -30px;
+}
+.slideMeetTitle {
+    font-size: 40px;
+}
+.section-6Right .sectionSubDesc {
+    margin: auto;
+    display: block;
+    max-width: none;
+}
+
+.section-7-content {
+    display: block;
+}
+
+.section-7-contentLeft, .section-7-contentRight {
+    display: block;
+    width: 100%;
+}
+
+.section.section-7 {
+    background-position: left 0px;
+    padding: 50px 0;
+}
+.sectionBlog.sectionBlogScale {
+    transform: none;
+}
+
+.sectionBlog {
+    margin: 0 auto 50px;
+}
+
+.section.section-8 {
+  background-size: cover;
+  padding: 0px 0 20px;
+}
+.keepUpdated input {
+    margin-bottom: 20px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+
+@media (max-width: 575px) {
+
+}
+
 
 /*Responsive*/
