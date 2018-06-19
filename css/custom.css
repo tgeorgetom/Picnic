@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'gilroy-regular';
+    src: url('../fonts/gilroy-regular-webfont.eot');
+    src: url('../fonts/gilroy-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gilroy-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-regular-webfont.woff') format('woff'),
+         url('../fonts/gilroy-regular-webfont.ttf') format('truetype'),
+         url('../fonts/gilroy-regular-webfont.svg#gilroy-regularuploaded_file') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url('gilroy-bold-webfont.eot');
+    src: url('gilroy-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gilroy-bold-webfont.woff2') format('woff2'),
+         url('gilroy-bold-webfont.woff') format('woff'),
+         url('gilroy-bold-webfont.svg#gilroy-bolduploaded_file') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 h1,
 h2,
 h3,
@@ -17,7 +40,15 @@ li{
   list-style: none;
 }
 *{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'gilroy-regular', Montserrat, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'gilroy-bold', Montserrat, sans-serif;
 }
 a:hover, 
 a:visited, 
@@ -485,6 +516,92 @@ h4.section-5-slideName {
 
 
 /* Section 5 */
+
+
+/* Section 6 */
+
+
+.section-6-slide {
+    display: table;
+    width: 100%;
+    margin: 0 -15px;
+}
+
+.section-6Left, .section-6Right {
+    width: 50%;
+    display: table-cell;
+    padding: 0 15px;
+}
+.section-6Left img {
+    width: 100%;
+}
+.section-6Left {
+    position: relative;
+    vertical-align: bottom;
+}
+.section-6Left .section-6Arrow {
+    position: absolute;
+    left: 15px;
+    display: inline-block;
+    width: 100%;
+    bottom: 0;
+}
+.section-6Arrow a {
+    position: static;
+    width:  100px;
+    float: left;
+    line-height: 100px;
+    height: 100px;
+    background: #fff;
+    opacity: 1;
+    color: #ddd;
+}
+.section-6Arrow a span{
+  color: #ddd;
+}
+.section-6Arrow img {
+    width: 30px;
+    text-align: center;
+}
+.section-6Arrow .h_arrow, .section-6Arrow a:hover  .n_arrow{
+  display: none;
+}
+.section-6Arrow a:hover  .h_arrow{
+  display: block;
+}
+.section-6Arrow a:hover {
+    background: #47164f;
+}
+.carousel-control-prev img.n_arrow, .carousel-control-next img.h_arrow  {
+    transform: rotate(180deg);
+}
+
+.slideMeetDate {
+    display: flex;
+}
+.slideMeetDate b {
+    width:  20px;
+    font-size: 40px;
+    position: relative;
+    top: -50px;
+    color: #eeeeee;
+}
+.slideMeetDate h2 {
+    font-size: 60px;
+    padding-left: 50px;
+    font-weight: 300;
+}
+.slideMeetTitle {
+    color: #f06b38;
+    font-size: 48px;
+    font-weight: 700;
+}
+.slideMeetPlace {
+    color: #555555;
+    font-weight: 700;
+    padding: 10px 0 25px;
+}
+/* Section 6 */
 
 /* Section 7 */
 
