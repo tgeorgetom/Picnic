@@ -219,6 +219,14 @@ html, body {
 .sectionSub {
   max-width: 300px;
 }
+.sectionCount > b {
+    font-size: 30px;
+    font-weight: 700;
+}
+.sectionCount span {
+    color: #dcdcdc;
+    font-weight: 300;
+}
 
 /* Section 1 */
 
@@ -241,7 +249,22 @@ html, body {
   transform: translateY(90px);
   margin-top: -30%;
 }
+.section.section-2 {
+    width: 100%;
+    content: "";
+    background: url(../images/sec2bg1.png);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 330px 0 500px;
+}
 
+.section-2-After .sectionContainRight {
+    transform: translateY(-60%);
+}
+.section-2-After {
+    height: 420px;
+}
 /* Section 2 */
 
 
@@ -251,9 +274,9 @@ html, body {
 .section-3{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6384d+0,f06b38+50 */
   background: #e6384d; /* Old browsers */
-  background: -moz-linear-gradient(left, #ec4c3e 0%, #f36c26 50%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #ec4c3e 0%, #f36c26 50%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #ec4c3e 0%, #f36c26 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(left, #ee5437 0%, #f36c26 50%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ee5437 0%, #f36c26 50%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ee5437 0%, #f36c26 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6384d', endColorstr='#f06b38',GradientType=1 ); /* IE6-9 */
 }
 .section-3 .sectionSubImg{
@@ -292,6 +315,40 @@ html, body {
   color: #fff;
   text-decoration: underline;
 } 
+
+.section.section-3{
+  position: relative;
+  padding-top: 550px;
+  padding-bottom: 500px;
+  background: url('../images/sec3bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*.section.section-3:before {
+    content: "";
+    background: url('../images/sec3bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.section.section-3:after {
+    content: "";
+    background: url('../images/sec3bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}*/
 /* Section 3 */
 
 
@@ -325,6 +382,104 @@ html, body {
 
 /* Section 4 */
 
+/* Section 5 */
+
+.section-5 .sectionHead {
+    max-width: 679px;
+}
+.section-5-slide{
+  /*max-width: 400px ;*/
+}
+h4.section-5-slideName {
+    color: #f06b38;
+    font-size: 20px;
+    padding-top: 70px;
+}
+
+.section-5-slideTitle {
+    color: #000;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 5px 0 10px;
+    font-size: 19px;
+}
+
+.section-5-slideDesc {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    max-width: 260px;
+    padding-bottom: 20px;
+    color: #555;
+}
+
+/*.section-5 .sectionContainRight, .section-5 .sectionContain{
+  display: block;
+}
+.section.section-5 .sectionContainRight {
+  padding-left: 70px;
+}*/
+.section-5-slideImg {
+    background: #fafafa;
+}
+
+.section-5-slideSocial li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.section-5-slideSocial li a {
+    font-size: 35px;
+    color: #d0cfcb;
+}
+.slick-list {
+    z-index: -1;
+}
+.section-5-slides .slick-arrow {
+    background: #fff;
+    border: none;
+    font-size: 0;
+    height: 90px;
+    width: 90px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.section-5-slides {
+    position: relative;
+}
+
+.section-5-slides .slick-prev.slick-arrow {
+    left: 50px;
+}
+
+.section-5-slides button.slick-next.slick-arrow {
+    right: 50px;
+    left: auto;
+    z-index: 2222222;
+}
+
+.section-5-slides button.slick-next.slick-arrow:after {
+    font-size: 26px;
+    content: '\f061';
+    font-family: fontawesome;
+}
+.section-5-slides button.slick-prev.slick-arrow:after {
+    font-size: 26px;
+    content: '\f060';
+    font-family: fontawesome;
+}
+
+
+
+
+
+/* Section 5 */
 
 /* Section 7 */
 
@@ -443,8 +598,13 @@ html, body {
 .keepUpdated input {
   width: 100%;
 }
-.section.section-8{
-  position: relative;
+.section.section-8 {
+    position: relative;
+    background: url(../images/sec8gb.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+    background-position: bottom center;
 }
 .section.section-8::after {
   content: "";
@@ -460,6 +620,7 @@ html, body {
   bottom: 0;
   display: block;
   z-index: -1;
+
 }
 .UpdatesEmail {
   padding: 10px 30px;
@@ -479,7 +640,9 @@ html, body {
   font-size: 14px;
   cursor: pointer;
 }
-
+.section-8-content {
+    padding: 100px 0 0px;
+}
 
 /* Section 8 */
 
