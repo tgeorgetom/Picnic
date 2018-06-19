@@ -80,7 +80,7 @@ html, body {
     padding-left: 30px;
     display: block;
     color: #fff;
-    max-width: 160px;
+/*    max-width: 160px;*/
     font-weight: 300;
     text-align: center;
 }
@@ -110,6 +110,11 @@ html, body {
     text-transform: uppercase;
     margin-right: 30px;
     cursor: pointer;
+    background: #e6384d; /* Old browsers */
+    background: -moz-linear-gradient(left, #e6384d 0%, #f06b38 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #e6384d 0%,#f06b38 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #e6384d 0%,#f06b38 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6384d', endColorstr='#f06b38',GradientType=1 ); /* IE6-9 */
 }
 .heroSectionBtns button:hover{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6384d+0,f06b38+50 */
