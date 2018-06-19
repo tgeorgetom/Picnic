@@ -91,6 +91,10 @@ html, body {
 
 /* Header */
 
+.logo {
+  width: 170px;
+}
+
 .heroSection {
   background: url('../images/banner.png');
   background-position: center;
@@ -512,6 +516,9 @@ h4.section-5-slideName {
 }
 
 
+.team-photo {
+  width: 440px;
+}
 
 
 
@@ -688,7 +695,7 @@ h4.section-5-slideName {
   position: absolute;
   left: 0;
   top: 0;
-  background: red;
+  background: #E6344F;
   padding: 7px 15px;
   text-transform: uppercase;
   color: #fff;
@@ -720,7 +727,7 @@ h4.section-5-slideName {
 .keepUpdated input {
   width: 100%;
 }
-.section.section-8 {
+.section.section-8, .section.keep-updated-team {
     position: relative;
     background: url(../images/sec8gb.png);
     background-size: 100%;
