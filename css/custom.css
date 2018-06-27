@@ -506,7 +506,7 @@ h4.section-5-slideName {
 
 }
 .slick-disabled {
-  opacity: 0.7;
+  opacity: 0;
 }
 .slick-arrow:hover{
   box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
@@ -525,7 +525,12 @@ h4.section-5-slideName {
   left: auto;
   z-index: 2222222;
 }
-
+.roadmapTimeline-contents .slick-prev.slick-arrow {
+  left: 10px;
+}
+.roadmapTimeline-contents .slick-next.slick-arrow {
+  right: 10px;
+}
 .slick-arrow:after{
     content: '';
     background: url('../images/Right arrow.png');
@@ -1037,6 +1042,18 @@ footer{
 
 /*Responsive*/
 
+@media (min-width: 1300px) {
+.section.section-2, .teamChatWrap{
+  background-size: 100% 100%;
+}
+.section.keepUpdated_dark.roadMapUpdates{
+  background-size: 100% 100px;
+}
+.roadMapUpdates:before{
+  height: 150px;
+}
+}
+
 @media (min-width: 1200px) {
 
 }
@@ -1300,7 +1317,12 @@ footer{
 .footSection {
   text-align: center;
 }
-
+.roadMapUpdates:before{
+  background-size: contain;
+}
+.keepUpdated {
+    padding: 40px 0 50px;
+}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {

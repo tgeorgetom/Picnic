@@ -61,7 +61,7 @@ $('.roadmapTimeline-contents').slick({
       breakpoint: 767,
       settings: {
         centerMode: false,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         centerPadding: '0px'
       }
