@@ -81,6 +81,7 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  font-size: 18px;
 }
 
 .hover_ease_2{
@@ -112,7 +113,7 @@ html, body {
 }
 
 .heroSection {
-  background: url('../images/banner.png');
+  background: url('../images/banner.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -148,7 +149,7 @@ html, body {
 }
 
 .heroSectionContent h2 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 300;
   padding: 20px 0 60px;
 }
@@ -248,8 +249,8 @@ button.navbar-toggler {
 .sectionHead {
   font-size: 44px;
   font-weight: 700;
-  max-width: 350px;
-  padding-bottom: 70px;
+/*  max-width: 350px;*/
+/*  padding-bottom: 70px;*/
 }
 .sectionSubImg {
   height: 140px;
@@ -261,15 +262,15 @@ button.navbar-toggler {
   margin-bottom: 30px;
 }
 .sectionSubHead {
-  color: #282828;
+  color: #555;
   font-size: 26px;
   font-weight: 300;
   text-transform: uppercase;
-  padding-bottom: 25px;
-  font-family: 'gilroy-light', Montserrat, sans-serif;
+  padding-bottom: 20px;
+  font-family: 'gilroy-bold', Montserrat, sans-serif;
 }
 .sectionSubDesc {
-  font-size: 16px;
+  font-size: 18px;
   color: #555;
   line-height: 30px;
   font-weight: 300;
@@ -278,10 +279,11 @@ button.navbar-toggler {
 .white .sectionSubHead , .white .sectionSubDesc, .white .sectionSeeMore{
   color: #fff;
 }
+
 .sectionSeeMore {
   padding-top: 60px;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   color: #555;
   letter-spacing: 6px;
@@ -320,11 +322,11 @@ button.navbar-toggler {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6384d', endColorstr='#f06b38',GradientType=1 ); 
 }
 .sectionNum {
-  font-size: 150px;
+  font-size: 90px;
   font-weight: 700;
   opacity: 0.3;
-  transform: translateY(90px);
-  margin-top: -30%;
+/*  transform: translateY(90px);*/
+/*  margin-top: -30%;*/
 }
 .section.section-2 {
   width: 100%;
@@ -386,7 +388,7 @@ button.navbar-toggler {
   padding-top: 200px;
 }
 .sectionMore {
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   padding: 20px 0px 0;
   display: block;
@@ -414,7 +416,7 @@ button.navbar-toggler {
 
 
 .section-4{
-  background: url('../images/910218206.png');
+  background: url('../images/910218206.jpg');
   background-position: right center;
   background-repeat: no-repeat;
   padding: 140px 0;
@@ -440,7 +442,7 @@ button.navbar-toggler {
     max-width: 679px;
 }
 .section-5-slide{
-  /*max-width: 400px ;*/
+  max-width: 440px ;
 }
 h4.section-5-slideName {
   color: #f06b38;
@@ -455,7 +457,7 @@ h4.section-5-slideName {
   font-size: 19px;
 }
 .section-5-slideDesc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 300;
   max-width: 260px;
@@ -463,11 +465,11 @@ h4.section-5-slideName {
   color: #555;
 }
 .section-5-slideImg {
-  background: #fafafa;
+  /*background: #fafafa;*/
 }
 .section-5-slideImg img {
   width: 100%;
-  padding-right: 100px;
+/*  padding-right: 100px;*/
 }
 .section-5-slideSocial li {
   display: inline-block;
@@ -542,7 +544,7 @@ h4.section-5-slideName {
   transform: rotate(180deg);
 }
 .team-photo {
-  width: 440px !important;
+  width: 100%;
 }
 
 
@@ -743,7 +745,7 @@ h4.section-5-slideName {
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 4px;
-  font-size: 17px;
+  font-size: 18px;
 }
 .sectionBlogDetails {
   padding: 30px 40px;
@@ -810,7 +812,7 @@ h4.section-5-slideName {
 
 
 .heroSection.teamHero {
-  background-image: url('../images/teambanner.png');
+  background-image: url('../images/teambanner.jpg');
 }
 .teamHero .navbar-expand-md .navbar-nav .nav-link, .copyHero .navbar-expand-md .navbar-nav .nav-link {
   color: #47164f
@@ -881,7 +883,7 @@ h4.section-5-slideName {
 /*road Map*/
 
 .heroSection.roadmapHero {
-  background-image: url('../images/roadmapbanner.png');
+  background-image: url('../images/roadmapbanner.jpg');
 }
 .roadmapHero .heroSectionContent{
   padding: 180px 0 360px;
@@ -993,7 +995,7 @@ footer{
   font-weight: 300;
 }
 .footSection p, .footSection a {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 26px;
 }
 .sectionBlogImg {
@@ -1067,6 +1069,11 @@ footer{
 }
 
 @media (max-width: 767px) {
+
+.mobileBackground {
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.30) 60%, rgba(255,255,255,0.00) 90%);;
+}
+
 .navbar-expand-md .navbar-nav .nav-link {
     text-align: left;
     padding: 10px 0;
@@ -1078,7 +1085,7 @@ footer{
     font-size: 32px;
 }
 .heroSectionBtns button {
-    font-size: 14px;
+    font-size: 18px;
 }
 .heroSectionContent {
     padding: 20px 0 160px;
@@ -1094,6 +1101,7 @@ footer{
 }
 .sectionHead {
     font-size: 35px;
+    text-align: center;
 }
 .sectionSub {
     margin: 0 auto 80px;
@@ -1248,6 +1256,7 @@ footer{
     width: 100%;
     display: block;
 }
+
 .roadmapTimelineSlide{
   padding-right: 0;
   padding-right: 20px;
@@ -1287,6 +1296,11 @@ footer{
   margin: 0 auto;
   display: block;
 }
+
+.footSection {
+  text-align: center;
+}
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
