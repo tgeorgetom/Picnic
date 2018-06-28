@@ -158,7 +158,7 @@ html, body {
   padding: 70px 0 240px;
 }
 
-.heroSectionBtns button {
+.heroSectionBtns a {
   border-radius: 50px;
   border: 1px solid #fff;
   font-weight: 700;
@@ -174,7 +174,8 @@ html, body {
   background: linear-gradient(to right, #e6384d 0%,#f06b38 50%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6384d', endColorstr='#f06b38',GradientType=1 );
 }
-.heroSectionBtns button:hover{
+.heroSectionBtns a:hover{
+  color: white;
   background: #e6384d; /* Old browsers */
   background: -moz-linear-gradient(left, #e6384d 0%, #f06b38 50%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #e6384d 0%,#f06b38 50%); /* Chrome10-25,Safari5.1-6 */
